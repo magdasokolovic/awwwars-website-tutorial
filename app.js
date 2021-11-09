@@ -14,6 +14,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(methodOverride())
 app.use(errorHandler())
 
+// in order to render css:
+app.use(express.static(path.join(__dirname, 'public')))
+
 const Prismic = require('@prismicio/client')
 const PrismicDOM = require('prismic-dom')
 
