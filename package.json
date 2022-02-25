@@ -1,7 +1,7 @@
 {
   "name": "awwwards-website",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.0"
+  
   "scripts": {
     "backend:build": "node app.js",
     "backend:development": "nodemon app.js",
@@ -51,6 +51,7 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.14",
     "prismic-dom": "^2.2.6",
-    "pug": "^3.0.2"
+    "pug": "^3.0.2",
+    "ua-parser-js": "^1.0.2"
   }
 }
