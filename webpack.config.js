@@ -1,10 +1,11 @@
 const path = require('path')
 const webpack = require('webpack')
+
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
-const TerserPlugin = require("terser-webpack-plugin");
+const TerserPlugin = require('terser-webpack-plugin')
 
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'dev'
 
@@ -15,13 +16,16 @@ const dirNode = 'node_modules'
 
 module.exports = {
   entry: [path.join(dirApp, 'index.js'), path.join(dirStyles, 'index.scss')],
+
   resolve: {
     modules: [dirApp, dirShared, dirStyles, dirNode]
   },
+
   plugins: [
     new webpack.DefinePlugin({
       IS_DEVELOPMENT
     }),
+
     new CopyWebpackPlugin({
       patterns: [
         {
@@ -111,6 +115,7 @@ module.exports = {
       }
     ]
   },
+
   optimization: {
     minimize: true,
     minimizer: [new TerserPlugin()]

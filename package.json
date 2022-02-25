@@ -1,7 +1,6 @@
 {
   "name": "awwwards-website",
-  "version": "1.0.0"
-  
+  "version": "1.0.0",
   "scripts": {
     "backend:build": "node app.js",
     "backend:development": "nodemon app.js",
@@ -11,6 +10,7 @@
   },
   "author": "Magda Sokolovic",
   "devDependencies": {
+    "auto-bind": "^5.0.1",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
@@ -23,6 +23,7 @@
     "eslint-plugin-standard": "^5.0.0",
     "file-loader": "^6.2.0",
     "glslify-loader": "^2.0.0",
+    "gsap": "^3.9.1",
     "image-minimizer-webpack-plugin": "^2.2.0",
     "imagemin": "^8.0.1",
     "imagemin-gifsicle": "^7.0.0",
@@ -31,7 +32,11 @@
     "imagemin-svgo": "^10.0.0",
     "include-media": "^1.4.10",
     "mini-css-extract-plugin": "^2.1.0",
-    "postcss-loader": "^6.2.0",
+    "normalize-wheel": "^1.0.1",
+    "ogl": "^0.0.87",
+    "postcss-loader": "^6.2.1",
+    "prefix": "^1.0.0",
+    "raw-loader": "^4.0.2",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
     "terser-webpack-plugin": "^5.2.4",
